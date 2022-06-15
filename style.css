@@ -1,0 +1,275 @@
+/* Custom Properties */
+@font-face {
+    font-family: 'HeroMainFont';
+    src: url(./Fonts/Roboto-Bold.ttf);
+    font-size: 48px;
+}
+
+@font-face {
+    font-family: 'secondaryText';
+    src: url(./Fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'headerLogoText';
+    src: url(./Fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'quoteFont';
+    src: url(./Fonts/Roboto-LightItalic.ttf);
+}
+
+:root {
+    --primaryTextColour : #F9FAF8;
+    --darkBackground: #1F2937;
+    --secondaryTextColour: #E5E7EB;
+}
+/* Custom Properties END */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NavBar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkBackground);
+    padding: 10px;
+    position: fixed;
+    width: 100vw;
+}
+
+.logo {
+    margin-left: 10%;
+    text-decoration: none;
+    font-family: 'headerLogoText';
+    font-size: 24px;
+    color: var(--secondaryTextColour);
+    white-space: nowrap;
+}
+
+.nav-links {
+    margin-right: 10%;
+}
+
+.nav-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    color: var(--secondaryTextColour);
+}
+
+.navbar-links-li {
+    margin-right: 15px;
+    font-family: 'secondaryText';
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: space-evenly;
+    padding: 10px;
+    display: block;
+}
+/* NavBar END */
+
+/* Hero */
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--darkBackground);
+    height: 100vh;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-family: 'HeroMainFont';
+    color: var(--primaryTextColour);
+}
+
+.left-side {
+    margin: 10%;
+}
+
+.right-side {
+    margin: 10;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 150px;
+    width: 550px;
+    background-color: var(--secondaryTextColour);
+    border: 1px solid gray;
+    height: 300px;
+}
+
+.placeholder p {
+    font-family: 'secondaryText';
+    color: #1F2937;
+}
+
+.subtext {
+    font-size: 18px;
+    color: var(--secondaryTextColour);
+    font-family: 'secondaryText';
+    padding: 5px;
+}
+
+.btn {
+    background-color: #3882F6;
+    width: 145px;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    margin-top: 7px;
+    color: var(--primaryTextColour);
+    font-size: 15px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+/* Hero END */
+
+/* Random Info  */
+.info-container {
+    height: 60vh;
+}
+
+.info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-top: 75px;
+    font-size: 20px;
+    font-family: 'headerLogoText';
+    color: var(--darkBackground);
+}
+
+.blocks-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blocks-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.block-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px; 
+}
+
+.block-item p {
+    padding: 5px;
+    font-family: secondaryText;
+    color: dark-grey;
+}
+/* Random Info END */
+
+/* Quote */
+.quote-container {
+    height: 45vh;
+    background-color: var(--secondaryTextColour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-block {
+    width: 50%;
+}
+
+.quote p {
+    font-size: 36px;
+    font-family: 'quoteFont';
+    color: var(--darkBackground);
+    padding: 10px;
+}
+
+.author {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.author h1 {
+    font-family: 'headerLogoText';
+    color: var(--darkBackground);
+}
+/* Quote END */
+
+/* Call to action */
+.call-container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-block {
+    background-color: #3882F6;
+    width: 75%;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.call-block h1 {
+    font-family: 'headerLogoText';
+    color: var(--secondaryTextColour);
+}
+
+.call-block p {
+    font-family: 'secondaryText';
+    color: var(--secondaryTextColour);
+}
+
+.call-btn {
+    height: 40px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    color: white;
+    font-family: 'HeroMainFont';
+}
+
+.call-btn:hover {
+    cursor: pointer;
+}
+/* Call to action END */
+
+/* Footer */
+footer {
+    height: 10vh;
+    background-color: var(--darkBackground);
+    color: var(--secondaryTextColour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'secondaryText';
+}
+/* Footer END */
